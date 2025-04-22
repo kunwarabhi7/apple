@@ -22,12 +22,12 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white/90 backdrop-blur-md fixed w-full z-50 border-b border-gray-200">
+    <nav className="backdrop-blur-md fixed w-full z-50 border-b ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Apple className="h-8 w-8 text-gray-900" />
+            <Apple className="h-8 w-8 " />
           </Link>
 
           {/* Desktop Nav Links */}
@@ -46,10 +46,10 @@ export default function Navbar() {
           {/* Icons */}
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="ghost" size="icon">
-              <Search className="h-5 w-5 text-gray-900" />
+              <Search className="h-5 w-5 " />
             </Button>
             <Button variant="ghost" size="icon">
-              <ShoppingBag className="h-5 w-5 text-gray-900" />
+              <ShoppingBag className="h-5 w-5 " />
             </Button>
           </div>
 
@@ -59,9 +59,9 @@ export default function Navbar() {
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
                   {isOpen ? (
-                    <X className="h-6 w-6 text-gray-900" />
+                    <X className="h-6 w-6 " />
                   ) : (
-                    <Menu className="h-6 w-6 text-gray-900" />
+                    <Menu className="h-6 w-6 " />
                   )}
                 </Button>
               </SheetTrigger>
@@ -71,7 +71,7 @@ export default function Navbar() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="text-lg text-gray-900 hover:text-gray-600 transition"
+                      className="text-lg  "
                       onClick={() => setIsOpen(false)}
                     >
                       {item.name}
@@ -79,10 +79,10 @@ export default function Navbar() {
                   ))}
                   <div className="flex space-x-4 pt-4">
                     <Button variant="ghost" size="icon">
-                      <Search className="h-5 w-5 text-gray-900" />
+                      <Search className="h-5 w-5 " />
                     </Button>
                     <Button variant="ghost" size="icon">
-                      <ShoppingBag className="h-5 w-5 text-gray-900" />
+                      <ShoppingBag className="h-5 w-5 " />
                     </Button>
                   </div>
                 </div>
